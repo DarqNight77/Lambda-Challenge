@@ -7,8 +7,10 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
-
+  console.log("Hello World");
 }
+
+helloWorld;
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -24,9 +26,10 @@ function helloWorld() {
 */
 
 function lambdaSchool() {
-
+return "Hello World";
 }
 
+helloWorld();
 /*
 3. Write a function called longestString that has a single parameter called strs.
      strs will be an array of strings.
@@ -38,9 +41,33 @@ function lambdaSchool() {
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-function longestString() {
+var strs = ["Cool", "Ate", "Bird", "Bo"];
 
+var longestStr = [];
+
+function longestString(strs) {
+  var strAlpha = 0;
+  for( var i = 0; i<strs.length; i++){
+    if(strAlpha < strs[i].length ){
+      strAlpha = strs[i].length;
+    }
+  }
+  
+  for( var j = 0; j <strs.length; j++){
+    if(strs[j].length == strAlpha){
+      longestStr.push(strs[j]);
+    }
+  }
+  
+  if(longestStr.length == 1){
+    return longestStr[0];
+  }
+  else {
+    return longestStr;
+  }
 }
+
+console.log(longestString(strs));
 
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
