@@ -48,7 +48,7 @@ function lambdaSchool(num) {
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-var strs = ["C++", "CSS", "JWT"];
+var strs = ["JavaScript", "CSS", "Swift"];
  
   var crntLngst = strs[0];
    
