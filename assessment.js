@@ -7,10 +7,10 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
-  console.log("Hello World");
+  return ("Hello World");
 }
 
-helloWorld;
+helloWorld();
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -26,10 +26,9 @@ helloWorld;
 */
 
 function lambdaSchool() {
-return "Hello World";
+
 }
 
-helloWorld();
 /*
 3. Write a function called longestString that has a single parameter called strs.
      strs will be an array of strings.
@@ -67,7 +66,7 @@ function longestString(strs) {
   }
 }
 
-console.log(longestString(strs));
+longestString(strs);
 
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
