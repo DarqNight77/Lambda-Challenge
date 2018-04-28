@@ -7,10 +7,10 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
-  return ("Hello World!");
+  return "Hello World!";
 }
 
-helloWorld();
+//helloWorld();
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -20,10 +20,10 @@ helloWorld();
      If num is divisible by 3 AND 5 return the string 'Lambda School' (notice the space)
      If num is NOT divisible by 3 or 5 then return num.
 
-     Example:
+     Example:*/
              lambdaSchool(15); // returns 'Lambda School'
              lambdaSchool(8); // returns 8
-*/
+
 
 function lambdaSchool(num) {
   
@@ -50,17 +50,17 @@ function lambdaSchool(num) {
 
 var strs = ["JavaScript", "CSS", "Swift"];
  
-  var crntLngst = strs[0];
+  var longest = strs[0];
    
 
 function longestString(strs) {
  
   for( var i = 0; i<strs.length; i++){
-    if(strs[i].length > crntLngst.length )
-      crntLngst = strs[i];
+    if(strs[i].length > longest.length )
+      longest = strs[i];
     
   }
-  return crntLngst;
+  return longest;
 }
 
 //longestString(strs);
