@@ -25,7 +25,17 @@ helloWorld();
              lambdaSchool(8); // returns 8
 */
 
-function lambdaSchool() {
+function lambdaSchool(num) {
+  
+    if(num % 3 === 0 && num % 5 === 0)
+            {return 'Lambda School'; }
+    else if(num % 3 === 0){
+      return 'Lambda';
+    }
+    else if(num % 5 === 0){ return 'School';} 
+    
+      else {return num;}
+  
 
 }
 
@@ -89,8 +99,17 @@ longestString(strs);
              computeUserAverageAge(users); // returns 62 (This number is rounded up from 61.6666)
 */
 
-function computeUserAverageAge() {
-
+function computeUserAverageAge(array){
+  var age = 0,
+      average;
+      
+      for(var i = 0; i<array.length;i++ ){
+        age +=array[i].age;
+      }
+      
+      average = age / array.length;
+      return Math.round(average);
+  
 }
 
 module.exports = {
