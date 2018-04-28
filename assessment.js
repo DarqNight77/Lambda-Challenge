@@ -63,7 +63,7 @@ function longestString(strs) {
   return crntLngst;
 }
 
-longestString(strs);
+//longestString(strs);
 
 
 /*
