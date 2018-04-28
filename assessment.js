@@ -10,7 +10,7 @@ function helloWorld() {
   return ("Hello World");
 }
 
-helloWorld();
+//helloWorld();
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -35,8 +35,6 @@ function lambdaSchool(num) {
     else if(num % 5 === 0){ return 'School';} 
     
       else {return num;}
-  
-
 }
 
 /*
